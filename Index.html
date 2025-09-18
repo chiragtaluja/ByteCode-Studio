@@ -1170,7 +1170,7 @@
     <!-- Header & Navigation -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">
+            <a href="#home" class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-laptop-code"></i>
                 </div>
@@ -1229,7 +1229,7 @@
     </section>
 
     <!-- Clients Section -->
-    <section class="clients">
+    <!-- <section class="clients">
         <div class="container">
             <div class="clients-grid">
                 <div class="client-logo">
@@ -1249,8 +1249,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> -->
     <!-- Enhanced Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -1508,27 +1507,34 @@
                         </div>
                         <div class="contact-details">
                             <h4>Our Location</h4>
-                            <p>123 Tech Street, San Francisco, CA 94103</p>
+                            <p>Street 6, Azad Nagar, Yamuna Nagar, Haryana, India</p>
                         </div>
                     </div>
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+
+                    <a href="whatsapp://send?phone=+918607129425">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone Number</h4>
+
+                                <p>+91 86071 29425</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Phone Number</h4>
-                            <p>+1 (555) 123-4567</p>
+                    </a>
+                    <a href="mailto:info.bytecodestudio@gmail.com">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Address</h4>
+                                <p>info.bytecodestudio@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email Address</h4>
-                            <p>info@ByteCode Studio.com</p>
-                        </div>
-                    </div>
+                    </a>
+
                     <div class="contact-method">
                         <div class="contact-icon">
                             <i class="fas fa-clock"></i>
@@ -1540,18 +1546,23 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="1ab67698-9a1a-4c1f-8082-a82998357ec0">
+
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            <input name="name" type="text" id="name" class="form-control" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            <input name="email" type="email" id="email" class="form-control" placeholder="Your Email"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="service">Service Interested In</label>
-                            <select id="service" class="form-control" required>
+                            <select name="service" id="service" class="form-control" required>
                                 <option value="">Select a service</option>
                                 <option value="web-development">Website Development</option>
                                 <option value="app-development">App Development</option>
@@ -1561,8 +1572,8 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="How can we help you?"
-                                required></textarea>
+                            <textarea name="message" id="message" class="form-control"
+                                placeholder="How can we help you?" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
@@ -1616,7 +1627,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 ByteCode Studio. All rights reserved.</p>
+                <p>&copy; 2025 ByteCode Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>
